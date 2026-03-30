@@ -16,17 +16,17 @@ export default function Skills() {
 
   return (
     <section id="skills" ref={sectionRef} className="py-16 bg-cream2 scroll-mt-20">
-      <div className="max-w-5xl mx-auto px-20">
+      <div className="max-w-5xl mx-auto px-6 md:px-20">
         <SectionLabel>Technical expertise</SectionLabel>
-        <h2 className="font-cormorant font-light text-[clamp(2.2rem,3.5vw,3rem)] leading-[1.15] text-ink mb-8">
+        <h2 className="font-cormorant font-light text-[clamp(2rem,5vw,3rem)] leading-[1.15] text-ink mb-8">
           What I <em className="italic text-sage-dark">bring</em><br />to your project
         </h2>
 
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {skills.map((skill) => (
             <div
               key={skill.name}
-              className="bg-cream p-6 border border-line hover:border-sage hover:-translate-y-1 hover:shadow-md transition-all duration-200 cursor-default"
+              className="bg-cream p-5 border border-line hover:border-sage hover:-translate-y-1 hover:shadow-md transition-all duration-200 cursor-default"
             >
               <div className="text-sm font-medium text-ink mb-1">{skill.name}</div>
               <div className="text-[0.7rem] tracking-widest uppercase text-sage mb-3">{skill.level}</div>
@@ -43,11 +43,11 @@ export default function Skills() {
           ))}
         </div>
 
-        <div className="flex gap-3 flex-wrap mt-10">
+        <div className="flex gap-2 flex-wrap mt-8">
           {softSkills.map((tag) => (
             <div
               key={tag}
-              className="text-[0.75rem] tracking-widest uppercase text-sage-dark border border-sage-light px-4 py-2 bg-sage-light/15 hover:bg-sage-light/40 transition-colors"
+              className="text-[0.72rem] tracking-widest uppercase text-sage-dark border border-sage-light px-3 py-2 bg-sage-light/15 hover:bg-sage-light/40 transition-colors"
             >
               {tag}
             </div>

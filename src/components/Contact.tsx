@@ -10,18 +10,17 @@ const quickFacts = [
 export default function Contact() {
   return (
     <section id="contact" className="py-16 bg-ink scroll-mt-20">
-      <div className="max-w-5xl mx-auto px-20">
+      <div className="max-w-5xl mx-auto px-6 md:px-20">
         <div className="flex items-center gap-4 text-[0.7rem] tracking-[0.25em] uppercase text-sage-light mb-2">
           Get in touch
           <span className="flex-1 h-px bg-white/10" />
         </div>
 
-        <h2 className="font-cormorant font-light text-[clamp(2.2rem,3.5vw,3rem)] leading-[1.15] text-white mb-8">
+        <h2 className="font-cormorant font-light text-[clamp(2rem,5vw,3rem)] leading-[1.15] text-white mb-8">
           Let's build<br /><em className="italic text-sage-light">something together</em>
         </h2>
 
-        <div className="grid grid-cols-2 gap-20 items-start">
-          {/* Left */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-start">
           <div>
             <p className="text-[0.95rem] text-white/50 leading-[1.8] mb-8">
               Available for freelance React projects, landing pages, and web apps —
@@ -48,8 +47,7 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Right — quick facts */}
-          <div className="border border-white/10 p-10" style={{ background: 'rgba(255,255,255,0.04)' }}>
+          <div className="border border-white/10 p-8" style={{ background: 'rgba(255,255,255,0.04)' }}>
             <div className="text-[0.68rem] tracking-[0.25em] uppercase text-white/30 mb-6">Quick facts</div>
             <div className="flex flex-col gap-5">
               {quickFacts.map((fact, i) => (
@@ -68,7 +66,7 @@ export default function Contact() {
 
 function ContactIcon({ children }: { children: React.ReactNode }) {
   return (
-    <div className="w-8 h-8 border border-white/15 flex items-center justify-center text-xs flex-shrink-0 transition-colors group-hover:border-sage-light">
+    <div className="w-8 h-8 border border-white/15 flex items-center justify-center text-xs flex-shrink-0">
       {children}
     </div>
   )

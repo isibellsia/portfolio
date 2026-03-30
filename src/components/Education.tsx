@@ -3,20 +3,16 @@ import { education, certificates, languages } from '../data/portfolio'
 export default function Education() {
   return (
     <section id="education" className="py-16 bg-cream2 scroll-mt-20">
-      <div className="max-w-5xl mx-auto px-20">
+      <div className="max-w-5xl mx-auto px-6 md:px-20">
         <SectionLabel>Background</SectionLabel>
-        <h2 className="font-cormorant font-light text-[clamp(2.2rem,3.5vw,3rem)] leading-[1.15] text-ink mb-8">
+        <h2 className="font-cormorant font-light text-[clamp(2rem,5vw,3rem)] leading-[1.15] text-ink mb-8">
           Education &amp;<br /><em className="italic text-sage-dark">Certificates</em>
         </h2>
 
-        <div className="grid grid-cols-2 gap-20">
-          {/* Education */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
           <div>
             {education.map((edu, i) => (
-              <div
-                key={i}
-                className={`py-6 ${i < education.length - 1 ? 'border-b border-line' : ''}`}
-              >
+              <div key={i} className={`py-5 ${i < education.length - 1 ? 'border-b border-line' : ''}`}>
                 <div className="font-cormorant text-lg font-normal text-ink mb-1">{edu.degree}</div>
                 <div className="text-[0.82rem] text-muted mb-1">{edu.school}</div>
                 <div className="text-[0.72rem] tracking-widest uppercase text-sage">{edu.year}</div>
@@ -24,7 +20,6 @@ export default function Education() {
             ))}
           </div>
 
-          {/* Certs + Languages */}
           <div>
             <ul className="list-none">
               {certificates.map((cert, i) => (
@@ -35,7 +30,7 @@ export default function Education() {
               ))}
             </ul>
 
-            <div className="mt-12">
+            <div className="mt-10">
               <SectionLabel>Languages</SectionLabel>
               <div className="flex flex-col gap-0">
                 {languages.map(({ flag, name, level }, i) => (
