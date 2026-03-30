@@ -5,15 +5,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        cream:     '#faf8f4',
-        cream2:    '#f3efe8',
-        sage:      '#7a9e8e',
-        'sage-light': '#c8dbd4',
-        'sage-dark':  '#4a7060',
-        ink:       '#1e1e1e',
-        'ink-soft':'#3d3d3d',
-        muted:     '#8a8a8a',
-        line:      '#e0dbd0',
+        cream:        'var(--bg)',
+        cream2:       'var(--bg2)',
+        sage:         'var(--accent-mid)',
+        'sage-light': 'var(--accent-light)',
+        'sage-dark':  'var(--accent)',
+        ink:          'var(--fg)',
+        'ink-soft':   'var(--fg-soft)',
+        muted:        'var(--muted)',
+        line:         'var(--line)',
+        'dark-section': 'var(--dark-bg)',
       },
       fontFamily: {
         cormorant: ['"Cormorant Garamond"', 'serif'],

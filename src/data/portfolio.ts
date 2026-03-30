@@ -13,6 +13,7 @@ export interface Experience {
   confidential?: boolean
   bullets: string[]
   isPersonal?: boolean
+  personalStack?: string
 }
 
 export interface Education {
@@ -22,14 +23,14 @@ export interface Education {
 }
 
 export const skills: Skill[] = [
-  { name: 'React',               level: '3.5 years', width: 95 },
-  { name: 'HTML / CSS',          level: '3.5 years', width: 95 },
-  { name: 'TypeScript',          level: '3.5 years', width: 88 },
-  { name: 'Tailwind / MUI',      level: '3.5 years', width: 90 },
-  { name: 'Node.js / Express',   level: 'Learning',  width: 45 },
+  { name: 'React',                  level: '3.5 years',  width: 95 },
+  { name: 'HTML / CSS',             level: '3.5 years',  width: 95 },
+  { name: 'TypeScript',             level: '3.5 years',  width: 88 },
+  { name: 'Tailwind / MUI',         level: '3.5 years',  width: 90 },
+  { name: 'Node.js / Express',      level: 'Learning',   width: 45 },
   { name: 'React Query / TanStack', level: 'Production', width: 80 },
-  { name: 'Supabase / Netlify',  level: 'Deployed',  width: 72 },
-  { name: 'DevOps',              level: 'Course',    width: 50 },
+  { name: 'Supabase / Netlify',     level: 'Deployed',   width: 72 },
+  { name: 'DevOps',                 level: 'Course',     width: 50 },
 ]
 
 export const softSkills: string[] = [
@@ -107,12 +108,13 @@ export const experiences: Experience[] = [
     dateRange: 'Personal Project',
     duration: 'Live on Netlify',
     title: 'Yoga Studio Booking App',
-    tags: ['React', 'Supabase', 'Netlify', 'Claude AI'],
+    tags: ['HTML', 'CSS', 'JavaScript', 'Supabase', 'Netlify'],
     isPersonal: true,
+    personalStack: 'Built with Claude AI',
     bullets: [
       'Booking app for a small yoga studio — clients register and unregister for classes by name',
-      'Built with AI assistance (Claude), deployed on Netlify with Supabase as the database',
-      'Real client, real deployment — end-to-end ownership of the product',
+      'Built with plain HTML, CSS and JavaScript with AI assistance (Claude)',
+      'Deployed on Netlify with Supabase as the database — full end-to-end ownership',
     ],
   },
 ]
@@ -121,7 +123,7 @@ export const education: Education[] = [
   {
     degree: 'M.Sc. Information Technology in Business Management',
     school: 'Technical University of Sofia — English Faculty',
-    year: '2024 - 2025',
+    year: '2024',
   },
   {
     degree: 'B.Sc. Informatics — Dual Diploma',
@@ -143,13 +145,13 @@ export const education: Education[] = [
 export const certificates: string[] = [
   'Cambridge First Certificate in English (FCE)',
   'Test DAF & TELC Deutsch C1',
-  'DevOps Course',
+  'DevOps Course — SoftUni',
   'Java Basics & Fundamentals — SoftUni',
   'Design Basics — SoftUni',
 ]
 
 export const languages = [
-  { flag: '🇩🇪', name: 'German',   level: 'C1 — Proficient' },
-  { flag: '🇬🇧', name: 'English',  level: 'C1 — Proficient' },
-  { flag: '🇧🇬', name: 'Bulgarian', level: 'Native' },
+  { flag: '🇩🇪', name: 'German',    level: 'C1 — Proficient' },
+  { flag: '🇬🇧', name: 'English',   level: 'C1 — Proficient' },
+  { flag: '🇧🇬', name: 'Bulgarian', level: 'Native'          },
 ]

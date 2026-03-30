@@ -2,20 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── LIGHT THEME (default) ── */
+:root, [data-theme="light"] {
+  --bg:        #faf8f4;
+  --bg2:       #f3efe8;
+  --fg:        #1e1e1e;
+  --fg-soft:   #3d3d3d;
+  --muted:     #8a8a8a;
+  --line:      #e0dbd0;
+  --accent:    #4a7060;
+  --accent-mid:#7a9e8e;
+  --accent-light:#c8dbd4;
+  --nav-bg:    rgba(250,248,244,0.92);
+  --card-bg:   #faf8f4;
+  --dark-bg:   #1e1e1e;
+  --dark-text: rgba(255,255,255,0.7);
+  --dark-muted:rgba(255,255,255,0.5);
+  --dark-line: rgba(255,255,255,0.08);
+}
+
+/* ── DARK THEME ── */
+[data-theme="dark"] {
+  --bg:        #141414;
+  --bg2:       #1a1a1a;
+  --fg:        #e8e4dc;
+  --fg-soft:   #c0bab0;
+  --muted:     #6a6a6a;
+  --line:      #2a2a2a;
+  --accent:    #7abba6;
+  --accent-mid:#5a9a88;
+  --accent-light:#2a4a40;
+  --nav-bg:    rgba(20,20,20,0.95);
+  --card-bg:   #1e1e1e;
+  --dark-bg:   #0e0e0e;
+  --dark-text: rgba(255,255,255,0.7);
+  --dark-muted:rgba(255,255,255,0.4);
+  --dark-line: rgba(255,255,255,0.06);
+}
+
+/* ── PINK THEME ── */
+[data-theme="pink"] {
+  --bg:        #fdf6f8;
+  --bg2:       #f9edf1;
+  --fg:        #2a1520;
+  --fg-soft:   #4a2535;
+  --muted:     #9a7a85;
+  --line:      #f0d0db;
+  --accent:    #b04070;
+  --accent-mid:#d06090;
+  --accent-light:#f5c0d0;
+  --nav-bg:    rgba(253,246,248,0.92);
+  --card-bg:   #fdf6f8;
+  --dark-bg:   #2a0a18;
+  --dark-text: rgba(255,240,245,0.85);
+  --dark-muted:rgba(255,220,235,0.5);
+  --dark-line: rgba(255,180,210,0.12);
+}
+
 @layer base {
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: 'DM Sans', sans-serif;
     font-weight: 300;
     line-height: 1.6;
-    background-color: #faf8f4;
-    color: #1e1e1e;
+    background-color: var(--bg);
+    color: var(--fg);
     overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 }
 
 @layer utilities {
   .skill-bar-fill {
     transition: width 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  .theme-transition {
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
   }
 }
