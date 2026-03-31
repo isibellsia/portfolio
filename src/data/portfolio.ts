@@ -23,14 +23,14 @@ export interface Education {
 }
 
 export const skills: Skill[] = [
-  { name: 'React',                  level: '3.5 years',  width: 95 },
-  { name: 'HTML / CSS',             level: '3.5 years',  width: 95 },
-  { name: 'TypeScript',             level: '3.5 years',  width: 88 },
-  { name: 'Tailwind / MUI',         level: '3.5 years',  width: 90 },
-  { name: 'Node.js / Express',      level: 'Learning',   width: 45 },
-  { name: 'React Query / TanStack', level: 'Production', width: 80 },
-  { name: 'Supabase / Netlify',     level: 'Deployed',   width: 72 },
-  { name: 'DevOps',                 level: 'Course',     width: 50 },
+  { name: 'React',                  level: '3.5 years',   width: 95 },
+  { name: 'HTML / CSS',             level: '3.5 years',   width: 95 },
+  { name: 'TypeScript',             level: '3.5 years',   width: 88 },
+  { name: 'Tailwind / MUI',         level: '3.5 years',   width: 90 },
+  { name: 'Node.js / Express',      level: 'Learning',    width: 45 },
+  { name: 'React Query / TanStack', level: 'Used in projects', width: 80 },
+  { name: 'Supabase / Netlify',     level: 'Deployed',    width: 72 },
+  { name: 'DevOps',                 level: 'Course',      width: 50 },
 ]
 
 export const softSkills: string[] = [
@@ -45,7 +45,6 @@ export const experiences: Experience[] = [
     title: 'AI Chat Platform Customization',
     tags: ['Open Web UI', 'LibreChat', 'Deployment', 'AI Integration'],
     lang: '🇩🇪 German',
-    confidential: true,
     bullets: [
       'Customizing, configuring and deploying open-source AI chat platforms',
       'Deep knowledge of Open Web UI and LibreChat — from setup to production deployment',
@@ -57,7 +56,6 @@ export const experiences: Experience[] = [
     title: 'Large-Scale Web Application',
     tags: ['React', 'PrimeReact', 'Tailwind', 'React Query', 'TanStack Form'],
     lang: '🇩🇪 German',
-    confidential: true,
     bullets: [
       'Built a complex enterprise web app from scratch — saw the full lifecycle from 0 to production',
       'Solved non-trivial integration challenges (Tailwind + PrimeReact compatibility)',
@@ -123,7 +121,7 @@ export const education: Education[] = [
   {
     degree: 'M.Sc. Information Technology in Business Management',
     school: 'Technical University of Sofia — English Faculty',
-    year: '2024',
+    year: '2024 — 2025',
   },
   {
     degree: 'B.Sc. Informatics — Dual Diploma',
@@ -153,5 +151,5 @@ export const certificates: string[] = [
 export const languages = [
   { flag: '🇩🇪', name: 'German',    level: 'C1 — Proficient' },
   { flag: '🇬🇧', name: 'English',   level: 'C1 — Proficient' },
-  { flag: '🇧🇬', name: 'Bulgarian', level: 'Native'          },
+  { flag: '🇧🇬', name: 'Bulgarian', level: 'Native speaker'  },
 ]
