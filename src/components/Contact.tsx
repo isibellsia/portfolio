@@ -14,16 +14,8 @@ export default function Contact() {
         <div className="flex items-center gap-4 text-[0.7rem] tracking-[0.25em] uppercase mb-2" style={{ color: 'var(--accent-light)' }}>
           Get in touch<span className="flex-1 h-px" style={{ background: 'var(--dark-line)' }} />
         </div>
-        <h2 className="font-cormorant font-light text-[clamp(2rem,5vw,3rem)] leading-[1.15] mb-8">
-          <span style={{ color: 'var(--dark-text)' }}>Let's build<br /></span>
-          <em className="italic" style={{ color: 'var(--accent-light)' }}>something together</em>
-        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-start">
           <div>
-            <p className="text-[0.95rem] leading-[1.8] mb-8" style={{ color: 'var(--dark-muted)' }}>
-              Available for freelance React projects, landing pages, and web apps —
-              particularly for clients in the DACH region. I work in German and English.
-            </p>
             <div className="flex flex-col gap-3">
               <a href={`mailto:${EMAIL}`} className="flex items-center gap-4 text-[0.85rem] no-underline transition-colors"
                 style={{ color: 'var(--dark-text)' }}
