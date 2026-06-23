@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-16 scroll-mt-20 theme-transition" style={{ background: 'var(--dark-bg)' }}>
       <div className="max-w-5xl mx-auto px-6 md:px-20">
-        <div className="flex items-center gap-4 text-[0.7rem] tracking-[0.25em] uppercase mb-2" style={{ color: 'var(--accent-light)' }}>
+        <div className="flex items-center gap-4 text-[0.7rem] tracking-[0.25em] uppercase mb-4" style={{ color: 'var(--accent-light)' }}>
           Get in touch<span className="flex-1 h-px" style={{ background: 'var(--dark-line)' }} />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-start">
