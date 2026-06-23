@@ -37,7 +37,7 @@ export default function Hero() {
             onMouseEnter={e => (e.currentTarget.style.background = 'var(--fg)')}
             onMouseLeave={e => (e.currentTarget.style.background = 'var(--accent)')}
           >
-            Work with me
+            Contact
           </button>
           <button
             onClick={() => scrollTo('experience')}
